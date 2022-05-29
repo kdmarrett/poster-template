@@ -1,0 +1,16 @@
+# These are example project actions that may be useful to consult for
+# reference. Some commands may be environment specific
+# all of these commands can be run in background as asynchronous
+# jobs leveraging asynctasks.vim and asyncrun.vim
+
+[project-build:nix]
+command=pdflatex -pdf main.tex
+cwd=<root>
+
+# this is for output=quickfix only
+# if it is omitted, vim's current errorformat will be used.
+errorformat=%f:%m:%l
+
+# save all files in buffer before executing any command
+save=2
+
